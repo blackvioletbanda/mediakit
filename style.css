@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.conteudo {
+    display: flex;
+}
+.background-text {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* height: 100%; */
+    flex: 1;
+    border-radius: 15px;
+    /* opacity: 0.6; */
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    align-self: center;
+    padding: 12px;
+    line-height: 2em !important;
+}
+.rosa {
+   color:rgb(138, 40, 97) !important;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.destaque {
+    color: white;
+    background-color:rgb(138, 40, 97);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.preto {
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+}
+.preto > li {
+    line-height: 1.5em;
+}
+
+.opacity-6{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+span.clouditem {
+    padding-left: 0.15em;
+    padding-right: 0.15em;
+    line-height: 90%;
+  }
+
+@media screen and (max-width: 600px){
+    .conteudo {
+        height: 100vh;
+        display: flex;
+    }
+   
+}

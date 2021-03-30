@@ -186,6 +186,7 @@ for (var key in colorName) {
 	}
 }
 
+
 var convert = module.exports = {
 	rgb: {channels: 3, labels: 'rgb'},
 	hsl: {channels: 3, labels: 'hsl'},
@@ -2976,7 +2977,7 @@ var defaults = {
 // TODO(v3): remove 'global' from namespace.  all default are global and
 // there's inconsistency around which options are under 'global'
 defaults._set('global', {
-	defaultColor: 'rgba(0,0,0,0.1)',
+	defaultColor: 'rgba(255,255,255,0.75)',
 	defaultFontColor: '#fff',
 	defaultFontFamily: "'Arial', 'Helvetica Neue', 'Helvetica', sans-serif",
 	defaultFontSize: 18,
