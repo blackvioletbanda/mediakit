@@ -22,7 +22,7 @@ body {
     line-height: 2em !important;
 }
 .rosa {
-   color:rgb(138, 40, 97) !important;
+   color:rgb(115, 40, 138) !important;
 }
 .flex {
     display: flex;
@@ -30,7 +30,7 @@ body {
 }
 .destaque {
     color: white;
-    background-color:rgb(138, 40, 97);
+    background-color:rgb(115, 40, 138);
     padding-right: 5px;
     padding-left: 5px;
 }
