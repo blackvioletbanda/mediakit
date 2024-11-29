@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Sarcolenta';
+    src: url('fonts/Sarcolenta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: 'Sarcolenta',Arial, Helvetica, sans-serif !important;
 }
 .conteudo {
     display: flex;
@@ -21,6 +28,16 @@ body {
     padding: 12px;
     line-height: 2em !important;
 }
+
+.bio {
+    /* position: absolute; */
+    align-self: center;
+    padding: 10px;
+    line-height: 1em;
+    font-size: 12px !important;
+    text-align: justify;
+}
+
 .rosa {
    color:rgb(115, 40, 138) !important;
 }
@@ -43,6 +60,15 @@ body {
     line-height: 1.5em;
 }
 
+.branco {
+    color: rgb(211, 211, 211);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.branco > li {
+    line-height: 2em;
+}
 .opacity-6{
     background-color: rgba(255, 255, 255, 0.6);
 }
@@ -104,6 +130,12 @@ span.clouditem {
     margin-right: 10px !important;
 }
 
+.r-stretch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 @media screen and (max-width: 600px){
     .conteudo {
@@ -111,4 +143,32 @@ span.clouditem {
         display: flex;
     }
    
+}
+
+.social-media-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 50px; 
+    flex: 1; 
+    gap: 10px; 
+    background-color: rgb(115, 40, 170,0.7); 
+    transition: background-color 0.3s ease;
+}
+
+
+.social-media-button:hover {
+        background-color: rgb(115, 40, 170, 1);
+}
+
+.social-media-container {
+    position: absolute; 
+    display: flex;  
+    width: 100%; 
+    z-index: 10000; 
+    bottom:0px; 
+    justify-content: space-between; 
+    left: 5px; 
+    bottom: 5px; 
+    gap: 2px; 
 }
