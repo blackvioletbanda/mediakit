@@ -58,6 +58,19 @@
     line-height: 1.5em;
 }
 
+.custom-bullets {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.custom-bullets li {
+    background: url('public/images/icone.ico') no-repeat left top;
+    background-size: 14px 20px; /* Adjust the size as needed */
+    padding-left: 24px; /* Adjust as needed to make space for the icon */
+    margin-bottom: 8px; /* Add some space between list items if needed */
+    display: flex;
+}
+
 .branco {
     color: rgb(211, 211, 211);
     font-weight: 600;
@@ -65,7 +78,8 @@
 }
 
 .branco > li {
-    line-height: 2em;
+    line-height: 1.5em;
+
 }
 .opacity-6{
     background-color: rgba(255, 255, 255, 0.6);
