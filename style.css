@@ -5,11 +5,15 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Sarcolenta',Arial, Helvetica, sans-serif !important;
+.reveal {
+    font-family: 'Sarcolenta' !important;
+    letter-spacing: 1.5px; /* Adjust the value as needed */
 }
+
 .conteudo {
     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 .background-text {
     background-color: rgba(255, 255, 255, 0.4);
@@ -22,12 +26,6 @@ body {
 
 }
 
-.texto {
-    /* position: absolute; */
-    align-self: center;
-    padding: 12px;
-    line-height: 2em !important;
-}
 
 .bio {
     /* position: absolute; */
@@ -137,13 +135,7 @@ span.clouditem {
 }
 
 
-@media screen and (max-width: 600px){
-    .conteudo {
-        height: 100vh;
-        display: flex;
-    }
-   
-}
+
 
 .social-media-button {
     display: flex; 
@@ -164,11 +156,92 @@ span.clouditem {
 .social-media-container {
     position: absolute; 
     display: flex;  
-    width: 100%; 
+    width: 95%; 
     z-index: 10000; 
-    bottom:0px; 
+    bottom:35px; 
     justify-content: space-between; 
-    left: 5px; 
-    bottom: 5px; 
-    gap: 2px; 
+    left: 7px; 
+    gap: 1px; 
+}
+
+.subtitle-home {
+    font-size: 16px;
+}
+
+.video-conteudo {
+    flex-direction: column ;
+}
+
+.titulo {
+    font-size: 35px;
+}
+
+.display-none-mobile {
+    display: block;
+}
+.display-block-mobile {
+    display: none;
+}
+
+.festa-scrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.integrante {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    align-self: center;
+}
+.lista-integrante {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px){
+    .conteudo {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-conteudo {
+        flex-direction: row ;
+    }
+    .subtitle-home {
+        font-size: 40px;
+        padding: 15px;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .display-none-mobile {
+        display: none;
+    }
+    .display-block-mobile {
+        display: block;
+    }
+    .festa-scrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .integrante {
+        width: 50%;
+    }
+    .social-media-container {
+        position: absolute; 
+        display: flex;  
+        width: 98%; 
+        z-index: 10000; 
+        justify-content: space-between; 
+        left: 5px; 
+        bottom: 35px; 
+        gap: 2px; 
+    }
+
+    .lista-integrante {
+        font-size: 40px;
+        padding: 25px;
+    }
 }
