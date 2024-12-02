@@ -211,6 +211,9 @@ span.clouditem {
 .lista-integrante {
     font-size: 25px;
 }
+.publico {
+    height: 400px;
+}
 
 @media screen and (max-width: 600px){
     .conteudo {
@@ -257,5 +260,8 @@ span.clouditem {
     .lista-integrante {
         font-size: 40px;
         padding: 25px;
+    }
+    .publico {
+        height: auto;
     }
 }

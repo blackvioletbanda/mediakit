@@ -99,12 +99,13 @@
 						<div style="flex: 3">
 							<div style="display: flex; justify-content: center;">
 								<p class="texto">
-									Construimos um show <strong class="destaque">feito pra ser marcante</strong>. <br>
+									Construimos um show <strong class="destaque">feito para ser marcante</strong>. <br>
 									Nossa festa mais marcante é a
 								</p>
 							</div>
 							<div style="display: flex; justify-content: center;">
-								<img src="public/images/festascrap.png" alt="festa scrap" style="width: 40%;">
+								<img src="public/images/festascrap.png" alt="festa scrap" class="display-none-mobile" style="width: 40%;">
+								<img src="public/images/festascrap.png" alt="festa scrap" class="display-block-mobile" style="width: 30%;">
 							</div>
 							<p class="texto">
 								Repertório focado nos <strong class="destaque">anos 2000</strong>, <br> com uma pegada
@@ -112,14 +113,15 @@
 								<br>
 								Vídeos nostálgicos, efeitos visuais e <br>muita interação com o público.
 							</p>
-
-							<p class="display-none-mobile">⬇⬇</p>
 						</div>
-						<div style="flex: 1;">
+						<div class="display-block-mobile">
+							<video data-autoplay src="public/images/festascrap1.mp4 "
+								style=" border: 5px solid rgb(115, 40, 138); height: 800px"></video>
+
+						</div>
+						<div class="display-none-mobile">
 							<video data-autoplay src="public/images/festascrap1.mp4 "
 								style=" border: 5px solid rgb(115, 40, 138);"></video>
-
-							<p class="display-block-mobile">⬇⬇</p>
 
 						</div>
 					</div>
@@ -191,7 +193,7 @@
 								<h5 class="destaque">História</h5>
 								<h3 class="rosa">Fase Piloto (2019-2021)</h3>
 								<ul class="custom-bullets preto">
-									<li>formada em Uberlândia - MG, criada por Luisa Seyfried em 2019.</li>
+									<li>Formada em Uberlândia - MG, criada por Luisa Seyfried em 2019.</li>
 									<li>Consolidação dos valores da banda.</li>
 									<li>Participação dos primeiros festivais na região de Uberlândia.</li>
 								</ul>
@@ -389,7 +391,7 @@
 									<li>Tecladista / Backing Vocals.</li>
 									<li>Guitarrista.</li>
 									<li>Violonista.</li>
-									<li>Multi-insturmentista de extrema versatividade. </li>
+									<li>Multi-instru mentista de extrema versatividade. </li>
 								</ul>
 							</div>
 							<div class="integrante">
@@ -411,21 +413,24 @@
 			<section>
 				<section data-background-video="public\backgrounds\amimated_background_1.mp4" data-background-video-loop
 					data-background-video-muted data-background-opacity="0.4">
-					<h3>PÚBLICO</h3>
-					<div class="background-text opacity-6 " style="height: 400px">
-						<div style="display: flex; flex-direction: row; ">
-							<div style="flex: 1;  ">
-								<p class="destaque">Gênero</p>
-								<canvas id="genderChart"
-									style="padding-top: 10px; padding-left: 100px; padding-right: 100px; padding-bottom: 200px"></canvas>
-							</div>
-							<div style="flex: 1; ">
-								<p class="destaque">Faixa Etária</p>
-								<canvas id="ageChart"
-									style="padding:25px; width: 100% !important; height: 150px !important;"></canvas>
+					<div class="container">
+						<h3>PÚBLICO</h3>
+						<div class="background-text opacity-6 publico" >
+							<div style="display: flex; flex-direction: row; ">
+								<div style="flex: 1;  ">
+									<p class="destaque">Gênero</p>
+									<canvas id="genderChart"
+										style="padding-top: 10px; padding-left: 100px; padding-right: 100px; padding-bottom: 200px"></canvas>
+								</div>
+								<div style="flex: 1; ">
+									<p class="destaque">Faixa Etária</p>
+									<canvas id="ageChart"
+										style="padding:25px; width: 100% !important; height: 150px !important;"></canvas>
+								</div>
 							</div>
 						</div>
 					</div>
+					
 				</section>
 				<section data-background-video="public\backgrounds\amimated_background_1.mp4" data-background-video-loop
 					data-background-video-muted data-background-opacity="0.4">
@@ -606,7 +611,7 @@
 							style="display: flex; justify-content: center; margin-top: 20px; padding: 0px 20px; font-size: 16px; background-color: #73288a; color: white; border: none; border-radius: 5px; cursor: pointer;">
 							<img src="public/images/download.png" alt="Download Icon"
 								style="width: 20px; margin-right: 10px;">
-							<p>Baixar arquivos de mídia</p>
+							<p>Baixar presskit</p>
 						</button>
 					</a>
 				</div>
